@@ -8,26 +8,25 @@ package com.Generics.java;
 public class MaximumTestGenerics {
 	
 	/*
-	 * Given three Floats and find maximum.
-	 * First i have taken number one is maximumNumber
+	 * Given three String values
 	 * then used compare to method 
 	 */
-	public static Float maximumFloat(Float num1, Float num2, Float num3) {
+	public static String maximumString(String num1, String num2, String num3) {
 
-		Float maximumNumber = num1;
+		String maximumString = num1;
 		if (num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0)
-			maximumNumber = num1;
+			maximumString = num1;
 		else if (num2.compareTo(num1) > 0 && num2.compareTo(num3) > 0)
-			maximumNumber = num2;
+			maximumString = num2;
 		else
-			maximumNumber = num3;
-		return maximumNumber;
+			maximumString = num3;
+		return maximumString;
 
 	}
 	
-	//print maximum Float numbers
+	//print maximum String
 	public static void main(String[] args) {
-		System.out.println("Maximum Float Number Among 3 will be :- " + maximumFloat(70.6f, 40.7f, 50.8f));
+		System.out.println("Maximum String Among 3 will be :- " + maximumString("Papaya", "Apple", "Mango"));
 	}
 
 }
